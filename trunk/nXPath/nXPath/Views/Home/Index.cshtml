@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@section Head{
+    <link rel="stylesheet" href="@Url.Content("~/style/style.css")" type="text/css" />    
+}
+
+<h2>nXPath</h2>
+<div style="display:none;">
+    <input class="ui-button" type="button" value="Load Document" />
+</div>
+<div id="entryDiv">
+    <textarea id="entryTextArea" style="width:100%;height:300px;"></textarea>
+    <input class="ui-button" type="submit" id="sendXPathButton" value="Load Up )))" />
+</div>
+<div>
+    <input type="text" id="xpathExpression" value="" />
+</div>
+
+<div class="halfwidth float-left">
+    <iframe style="width:100%;" src="about:blank"></iframe>
+</div>
+
+<div class="halfwidth float-right">
+    <iframe style="width:100%;" src="about:blank"></iframe>
+</div>

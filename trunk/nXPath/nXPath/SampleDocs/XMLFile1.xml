@@ -1,0 +1,78 @@
+﻿<document id="28e5fa78-f6b6-43ce-94e8-482470fd7f45" name="SpeadDocumentTemplate" path="Core\SpeadDocumentTemplate.xml" zoom="83.10704750011976" width="210mm" height="297mm" bleedLeft="2mm" bleedTop="2mm" bleedRight="2mm" bleedBottom="2mm" initialLayout="CC833D64-3F92-A649-0994-468CDFCD9B5E" initialLayoutName="[Default]" savedInEditor="true" textLanguage="" chiliVersion="3.1.1.1" foldSettingID="">
+  <pages numIncludedPages="2">
+    <item id="B8EE7A82-6DDC-E961-D582-468CDF6B3D92" name="2" explicitMarginRight="0mm" explicitMarginLeft="0mm" includeInOutputComputed="true" contentType="">
+      <sectionOptions newSection="true" pageStart="2" includeInOutput="true" />
+      <frames>
+        <item id="0654A23C-FD34-885E-0117-4852732D4DC3" name="New Frame" layer="810762B1-8E8C-A85A-B9C3-468CDF77E9C4" layerName="New Layer" x="0 mm" y="0 mm" width="210 mm" height="297 mm" blendMode="normal" moveRegion="" contentX="0 mm" contentY="0 mm" contentBottom="0 mm" contentRight="0 mm" contentWidth="210 mm" contentHeight="297 mm" rotatedBoundsPt="-1.2032673883626523;-9.626139106901219;596.4596444113668;894.0878329228688;" type="snippet" includeInMobileStory="true" mobileStoryIndex="0" isInline="false" isCell="false" pageNum="1" numPages="3" hasContent="true" path="" previewURL="" realWidthPixels="566" realHeightPixels="566" realWidth="566" realHeight="566" fitMode="proportional" fitPoint="center" imgX="0 mm" imgY="43.5 mm" imgWidth="210 mm" imgHeight="210 mm" imgRotation="0" clipX="0 mm" clipY="0 mm" clipWidth="210 mm" clipHeight="210 mm" layoutID="" layoutName="" snippetDocXML="" snippetDocID="50ca1964-ee76-453a-9f1c-89bfa1ad628a" placeAsFrames="false" box="417E7C73-FC7F-B293-A87B-48527347CA91" boxName="Full" saveInline="false" fitSnippetPercentValue="100" useClosestAlternateLayout="false">
+          <anchors>
+            <item id="452BC1A1-2F12-9C20-4407-485403F9F1B2" name="right" targetType="" targetPoint="" targetParagraph="" minValue="" maxValue="" />
+            <item id="18A40E78-34E0-C5A3-5F44-4854040D8ED8" name="bottom" targetType="" targetPoint="" targetParagraph="" minValue="" maxValue="" />
+            <item id="47EDDDF4-DAE5-F0CC-071E-4854040DF057" name="left" targetType="" targetPoint="" targetParagraph="" minValue="" maxValue="" />
+            <item id="E6CC6077-3DD4-3A0B-BD9D-4854040D6BF9" name="top" targetType="" targetPoint="" targetParagraph="" minValue="" maxValue="" />
+          </anchors>
+          <frameContentConstraints limitFonts="inherit" limitFontSize="inherit" limitTextColors="inherit" limitParagraphStyles="inherit" limitCharacterStyles="inherit" limitBorderColors="inherit" limitFillColors="inherit" allowedBorderColors="" allowedCharacterStyles="" allowedFillColors="" allowedFonts="" allowedParagraphStyles="" allowedTextColors="" minFontSize="0.1" maxFontSize="5000" hasAppliedConstraint="false" fontInputType="numeric" fontPulldownValues="6;8;10;12;16;24;36;72" fontStepSize="1" limitImageFitModes="inherit" allowedImageFitModes="" />
+        </item>
+        <item id="5A3BD5D2-C54F-C464-1C16-4852DE88D038" name="New Frame 2" layer="810762B1-8E8C-A85A-B9C3-468CDF77E9C4" layerName="New Layer" x="210.124 mm" y="0 mm" width="210.124 mm" height="297.145 mm" blendMode="normal" moveRegion="" contentX="0 mm" contentY="0 mm" contentBottom="0 mm" contentRight="0 mm" contentWidth="210.124 mm" contentHeight="297.145 mm" rotatedBoundsPt="594.4140898511503;-9.626139106901219;1192.4379818673885;924.4703344790258;" type="snippet" includeInMobileStory="true" mobileStoryIndex="0" isInline="false" isCell="false" pageNum="2" numPages="3" hasContent="true" path="" previewURL="" realWidthPixels="566" realHeightPixels="566" realWidth="566" realHeight="566" fitMode="proportional" fitPoint="center" imgX="0 mm" imgY="43.5105 mm" imgWidth="210.124 mm" imgHeight="210.124 mm" imgRotation="0" clipX="0 mm" clipY="0 mm" clipWidth="210.124 mm" clipHeight="210.124 mm" layoutID="" layoutName="" snippetDocXML="" snippetDocID="50ca1964-ee76-453a-9f1c-89bfa1ad628a" placeAsFrames="false" box="6DBD8391-A20D-7207-BE4B-4852DE8B2B6B" boxName="Full" saveInline="false" fitSnippetPercentValue="100" useClosestAlternateLayout="false">
+          <anchors>
+            <item id="35BBFD76-E983-F3A1-2799-485457908CD1" name="right" targetType="" targetPoint="" targetParagraph="" minValue="" maxValue="" />
+            <item id="E27A6C3D-5DF4-3EAC-184A-485457908B28" name="bottom" targetType="" targetPoint="" targetParagraph="" minValue="" maxValue="" />
+            <item id="726FB0F1-4214-73A5-1069-485457902152" name="left" targetType="" targetPoint="" targetParagraph="" minValue="" maxValue="" />
+            <item id="5EBAC8FC-BD10-09DA-713C-485457903D1A" name="top" targetType="" targetPoint="" targetParagraph="" minValue="" maxValue="" />
+          </anchors>
+          <frameContentConstraints limitFonts="inherit" limitFontSize="inherit" limitTextColors="inherit" limitParagraphStyles="inherit" limitCharacterStyles="inherit" limitBorderColors="inherit" limitFillColors="inherit" allowedBorderColors="" allowedCharacterStyles="" allowedFillColors="" allowedFonts="" allowedParagraphStyles="" allowedTextColors="" minFontSize="0.1" maxFontSize="5000" hasAppliedConstraint="false" fontInputType="numeric" fontPulldownValues="6;8;10;12;16;24;36;72" fontStepSize="1" limitImageFitModes="inherit" allowedImageFitModes="" />
+        </item>
+      </frames>
+      <frameContentConstraints limitFonts="inherit" limitFontSize="inherit" limitTextColors="inherit" limitParagraphStyles="inherit" limitCharacterStyles="inherit" limitBorderColors="inherit" limitFillColors="inherit" allowedBorderColors="" allowedCharacterStyles="" allowedFillColors="" allowedFonts="" allowedParagraphStyles="" allowedTextColors="" minFontSize="0.1" maxFontSize="5000" hasAppliedConstraint="false" fontInputType="numeric" fontPulldownValues="6;8;10;12;16;24;36;72" fontStepSize="1" limitImageFitModes="inherit" allowedImageFitModes="" />
+    </item>
+    <item id="CB0C2217-8013-98E6-4ADF-468C5CDF6F7E" name="3" explicitMarginRight="0mm" explicitMarginLeft="0mm" includeInOutputComputed="true" contentType="">
+      <frameContentConstraints limitFonts="inherit" limitFontSize="inherit" limitTextColors="inherit" limitParagraphStyles="inherit" limitCharacterStyles="inherit" limitBorderColors="inherit" limitFillColors="inherit" allowedBorderColors="" allowedCharacterStyles="" allowedFillColors="" allowedFonts="" allowedParagraphStyles="" allowedTextColors="" minFontSize="0.1" maxFontSize="5000" hasAppliedConstraint="false" fontInputType="numeric" fontPulldownValues="6;8;10;12;16;24;36;72" fontStepSize="1" limitImageFitModes="inherit" allowedImageFitModes="" />
+    </item>
+  </pages>
+  <paragraphStyles>
+    <item id="539CCEBC-4FF4-3F24-3A4A-468CDFAE6408" name="[None]" color="77A2D98D-71F1-396E-1284-468CDF87B627" colorName="[Black]" alignToBaseLine="false" applyToNewFrames="false" applyToNewFramesAndPreserveLink="false" textOverprint="false">
+      <format color="0" />
+      <indentSettings_1 bulletCharacter="•" textIndent="-5mm" paragraphStartIndent="10mm" active="false" />
+      <indentSettings_2 bulletCharacter="•" textIndent="-5mm" paragraphStartIndent="10mm" active="false" />
+      <indentSettings_3 bulletCharacter="•" textIndent="-5mm" paragraphStartIndent="10mm" active="false" />
+      <indentSettings_4 bulletCharacter="•" textIndent="-5mm" paragraphStartIndent="10mm" active="false" />
+      <indentSettings_5 bulletCharacter="•" textIndent="-5mm" paragraphStartIndent="10mm" active="false" />
+    </item>
+  </paragraphStyles>
+  <characterStyles>
+    <item id="5430E6AA-1689-6C1B-6CE1-468CDFC94C4B" name="[None]" color="77A2D98D-71F1-396E-1284-468CDF87B627" colorName="[Black]" textOverprint="false">
+      <format color="0" />
+      <underline weight="1" offset="0mm" color="77A2D98D-71F1-396E-1284-468CDF87B627" colorName="[Black]" active="false" />
+    </item>
+  </characterStyles>
+  <colors editableInPopup="true">
+    <item id="4BAF2134-3FD5-8B6F-B359-468CDF830F3D" name="[None]" r="0" g="0" b="0" c="0" m="0" y="0" k="100" isDocumentColor="true" type="CMYK" editableInPopup="inherit" L="0" A="0" B2="0" hexValue="#000000" />
+    <item id="77A2D98D-71F1-396E-1284-468CDF87B627" name="[Black]" r="0" g="0" b="0" c="0" m="0" y="0" k="100" isDocumentColor="true" type="CMYK" editableInPopup="inherit" L="0" A="0" B2="0" hexValue="#000000" />
+    <item id="F6C3E0BE-D3D5-F6CF-72F4-468CDF8B8D75" name="[White]" r="0" g="0" b="0" c="0" m="0" y="0" k="0" isDocumentColor="true" type="CMYK" editableInPopup="inherit" L="0" A="0" B2="0" hexValue="#fefefe" />
+  </colors>
+  <layers>
+    <item id="810762B1-8E8C-A85A-B9C3-468CDF77E9C4" name="New Layer" moveRegion="" contentType="" textLanguage="">
+      <frameContentConstraints limitFonts="inherit" limitFontSize="inherit" limitTextColors="inherit" limitParagraphStyles="inherit" limitCharacterStyles="inherit" limitBorderColors="inherit" limitFillColors="inherit" allowedBorderColors="" allowedCharacterStyles="" allowedFillColors="" allowedFonts="" allowedParagraphStyles="" allowedTextColors="" minFontSize="0.1" maxFontSize="5000" hasAppliedConstraint="false" fontInputType="numeric" fontPulldownValues="6;8;10;12;16;24;36;72" fontStepSize="1" limitImageFitModes="inherit" allowedImageFitModes="" />
+    </item>
+  </layers>
+  <variables notes="" defaultTextDirection="ltr" />
+  <fonts>
+    <item id="C99587D2-3530-1319-160B-468CDF7F9BF0" name="Arial Regular" family="Arial" style="Regular" swfURL="HP2/download.aspx?apiKey=z0xH8+1Q0A9rj7FvFk__nGG_G1HVtypYYfunPNjyJFON1s8bNr0J+rN3C9V6ikDFgWpUNVqstlQ=&amp;resourceName=Fonts&amp;id=C99587D2-3530-1319-160B-468CDF7F9BF0&amp;path=&amp;name=Arial%20Regular&amp;type=swf&amp;page=&amp;client_app=CHILI_BackOffice&amp;c_v=3" />
+  </fonts>
+  <alternateLayouts>
+    <item id="CC833D64-3F92-A649-0994-468CDFCD9B5E" name="[Default]" mobileOutputPurpose="" storyMode="never" />
+  </alternateLayouts>
+  <preflightPreferences textOverflow="warning" imageOutputResolution="warning" imageResize="ignore" requiredVariable="warning" frameOutsidePage="warning" preventSaveOnErrors="true" minOutputResolution="72" minResizePercentage="70" maxResizePercentage="120" preventPdfGenerationOnErrors="true" showWarningsOnSave="false" imageOutputResolutionType="bitmap" imageResizeType="vector" missingCharacter="warning" />
+  <preflightResults numErrors="0" numWarnings="0" />
+  <adSettings adSettingsID="" showTypeOverlays="true" publicationID="" showNoteIcons="false" showNoteOverlays="false" showNoteOverlaysForBlanks="true" />
+  <viewPreferences measurementUnit="mm" displayQuality="highest" viewMode="edit" pageMode="normal" pageFlowColumns="calculate" marginBetweenSpreads="false" showPageRulers="false" showHelpLayers="false" bgColor="16777215" pageVisibilityMode="show" initialZoom="fitpage" minZoom="20" maxZoom="300" pageMarginsX="25" pageMarginsY="25" bookViewShowTypeOverlays="false" bookViewNavigation="book" bookViewCornerTease="true" bookViewHardCovers="false" bookViewPageSlope="true" bookViewIncludeAnnotations="true" bookViewAllowEditAnnotations="true" bookViewTransitionActive="false" bookViewTransitionInterval="5" bookViewTransitionLoop="true" bookViewTransitionFinalURL="" bookViewPortraitLayout="CC833D64-3F92-A649-0994-468CDFCD9B5E" bookViewPortraitLayoutName="[Default]" bookViewLandScapeLayout="CC833D64-3F92-A649-0994-468CDFCD9B5E" bookViewLandScapeLayoutName="[Default]" showBookPageLabels="false" bookViewShowSpreads="true" bookViewSpreadColFlow="2" bookViewColumnWidth="300" bookMarginsX="20" zoomShortCutIncrement="25" bookMarginsY="20" showHelp="true" showHiddenCharacters="false" sourceView="false" mouseWheelZooms="false" replaceContentOnDrag="true" rotateView="0" wrapMargins="true" showTextColumns="true" showMargins="true" showBorders="true" bordersOnMouseOver="true" showInset="true" showSections="true" showBleed="true" showSlug="false" showGrid="false" gridX="0mm" gridY="0mm" gridSize="10mm" snapToGrid="false" snapToObjects="true" snapSize="8" showMoveRegions="true" showWarnings="true" showChain="true" showTabRuler="true" useDefaultPlaceHolderText="true" customPlaceHolderText="Type here..." repeatCustomPlaceHolderText="true" fillNewTextFrames="false" autoSelectNewTexts="false" autoTextCursor="false" createBulletLists="true" superScriptOrdinals="true" defaultImageFit="proportional" bookViewIncludeLinks="true" showPageLabels="false" snapFrameMinWidth="10" snapFrameMinHeight="10" snapGuideVisibility="500" allowPasteTextShortcuts="true" fontSizeIncrements="1" showDocumentBaseLineGrid="false" showTextFrameBaseLineGrid="false" liveTextUpdates="true" defaultRgbColorEditType="" defaultColorType="CMYK" allowZoomShortCuts="true" bookViewOpenOnFirstPage="true" showFrameHoverHighlight="false" pageCanvasMarginX="90" pageCanvasMarginY="90" pageFitMarginX="18" pageFitMarginY="18" allowCopyPasteShortcuts="true" allowUndoRedoShortcuts="true" showMissingCharacters="true" copyPasteForContent="">
+    <spellCheckPreferences enabled="true" ignoreWordWithAllUpperCase="false" ignoreWordWithNumber="false" />
+    <storyViewPreferences editWithFormatting="true" plainTextSize="14" plainTextColor="0" plainTextBackground="14540253" endUserCanToggle="false" plainHiddenCharacterColor="255" highlightVariables="true" highlightConditions="true" highlightVariableColor="65280" highlightConditionColor="16711680" />
+    <annotationSettings allowEditOldAnnotations="true" allowEditOtherUsersAnnotations="true" />
+    <linkSettings baseURL="" showToolTips="true" showAutomaticToolTip="true" showBackground="true" backgroundColor="255" showHover="true" backgroundHoverColor="65280" backgroundOpacity="25" backgroundColorRGB="255,255,255" />
+    <frameHandlePreferences cornerHandleType="circle" cornerHandleWidth="8" cornerHandleBgColor="10079487" cornerHandleBorderColor="0" cornerHandleBorderWeight="0.5" sideHandleType="rectangle" sideHandleWidth="6" sideHandleBgColor="10079487" sideHandleBorderColor="0" sideHandleBorderWeight="0.5" rotationHandleType="circle" rotationHandleWidth="10" rotationHandleBgColor="10079487" rotationHandleBorderColor="0" rotationHandleBorderWeight="0.5" showMoveHandle="false" showMoveHandleForText="true" rotationHandleLocation="bottom_right" rotationHandleFromCenter="false" transparent="false" nudgeIncrement="1 mm" showSwapContentHandle="false" />
+  </viewPreferences>
+  <importWarnings importedFrom="" importDate="" originalPath="" importedBy="" extensionVersion="" />
+  <dataSource dataSourceID="" xmlString="" fileName="" hasContent="false" numRows="0" selectedFile="" selectedQuery="" lastLoadedQueryString="" selectedSpreadsheet="" />
+  <frameContentConstraints limitFonts="inherit" limitFontSize="inherit" limitTextColors="inherit" limitParagraphStyles="inherit" limitCharacterStyles="inherit" limitBorderColors="inherit" limitFillColors="inherit" allowedBorderColors="" allowedCharacterStyles="" allowedFillColors="" allowedFonts="" allowedParagraphStyles="" allowedTextColors="" minFontSize="0.1" maxFontSize="5000" hasAppliedConstraint="false" fontInputType="numeric" fontPulldownValues="6;8;10;12;16;24;36;72" fontStepSize="1" limitImageFitModes="inherit" allowedImageFitModes="" />
+  <baseLineGridOptions relativeStart="page_top" />
+</document>

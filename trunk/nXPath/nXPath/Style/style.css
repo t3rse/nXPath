@@ -1,0 +1,18 @@
+﻿body {
+    margin:0px;
+}
+
+.halfwidth
+{
+    width:50%;
+}
+
+.float-left
+{
+    float:left;
+}
+
+.float-right
+{
+    float:right;
+}
