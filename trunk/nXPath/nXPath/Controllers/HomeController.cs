@@ -16,5 +16,16 @@ namespace nXPath.Controllers
             return View();
         }
 
+        public ActionResult XmlLoader() {
+
+            return View("XLoader");
+        }
+
+        [HttpPost]
+        [ValidateInput(false)]
+        public ActionResult XmlLoader(string xmlSourceArea)
+        {
+            return Content(xmlSourceArea, "text/xml");
+        }
     }
 }

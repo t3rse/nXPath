@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "XLoader";
+}
+
+@section Head{
+    <script type="text/javascript">
+        $(function () {
+            $("#tabs").tabs();
+        });
+
+    </script>    
+}
+@using(Html.BeginForm("XmlLoader", "Home", FormMethod.Post)){
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Load From Paste</a></li>
+    <li><a href="#tabs-2">Load From File</a></li>
+  </ul>
+  <div id="tabs-1">
+    <textarea id="xmlSourceArea" name="xmlSourceArea"></textarea>
+  </div>
+  <div id="tabs-2">
+    <input type="file" value="Select File" />
+  </div>
+</div>
+<input class="ui-button" type="submit" value="Load Xml Content" />
+}
