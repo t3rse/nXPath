@@ -128,6 +128,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Lib\CustomActionResult\XmlActionResult.cs" />
+    <Compile Include="Models\XmlDocModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +146,8 @@
     <Content Include="Scripts\jquery.signalR-1.0.1.js" />
     <Content Include="Scripts\jquery.signalR-1.0.1.min.js" />
     <Content Include="Scripts\nXPath.js" />
+    <Content Include="Scripts\pretty-xml-tree.js" />
+    <Content Include="Scripts\pretty-xml-tree.xsl" />
     <Content Include="Style\style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -154,10 +158,11 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\XLoader.cshtml" />
+    <Content Include="Views\Home\XView.cshtml" />
+    <Content Include="Views\Home\XResolve.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

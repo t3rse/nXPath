@@ -7,13 +7,31 @@
     <script type="text/javascript">
         $(function () {
             // implement
+            $("#executeXPathButton").click(function () {
+                var undecoded = $("#xmlFrame").contents().find("pre").html();
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Content("~/Home/XPathProcessing")',
+                    data: { xmlDoc: undecoded, xPath: '*' },
+                    success: function (res) {
+                        console.log(res);
+                    },
+                    dataType: 'text'
+                });
+
+            });
         });
     </script>
 }
 
 <h2>nXPath</h2>
+<div>
+
+       <span id="xpathEntrySpan">Enter Your xPath:</span> <input type="text" id="xpathInput" /><input id="executeXPathButton" type="button" class="ui-button" value="Execute" />
+</div>
 <div class="halfwidth float-left">
-    <iframe style="height:600px;width:100%;" src="@Url.Action("XmlLoader")"></iframe>
+
+    <iframe id="xmlFrame" style="height:600px;width:100%;" src="@Url.Action("XmlLoader")"></iframe>
 </div>
 
 <div class="halfwidth float-right">

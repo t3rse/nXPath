@@ -1,0 +1,9 @@
+﻿@model nXPath.Models.XmlDocModel
+
+@{
+    ViewBag.Title = "XView";
+}
+
+<pre>
+    @(new HtmlString(this.Model.Xml))
+</pre>
