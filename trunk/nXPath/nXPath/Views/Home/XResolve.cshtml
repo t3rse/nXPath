@@ -1,5 +1,49 @@
 ﻿@{
     ViewBag.Title = "XResolve";
 }
-
+@section Head{
+    <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+    <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+    <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js" type="text/javascript"></script>
+    <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+}
 <h2>XResolve</h2>
+<pre class="brush: xml">
+ &lt;?xml version="1.0" encoding="utf-8" ?> 
+      
+      &lt;!-- comments -->
+      &lt;rootNode>
+      	&lt;childNodes>
+      		&lt;childNode attribute = "value" namespace:attribute='value' attribute=/>
+      		&lt;childNode />
+      		&lt;childNode />
+      		&lt;childNode />
+      		&lt;childNode 
+      			attr1="value"
+      			attr2="10"
+      			attr3="hello"
+      			>
+      				value
+      			&lt;/childNode>
+      		&lt;namespace:childNode>
+      			&lt;![CDATA[
+      				this is some CDATA content
+      				&lt;!-- comments inside cdata -->
+      				&lt;b alert='false'>tags inside cdata&lt;/b>
+      			]]>
+      			
+      			value = "plain string outside"
+      			hello = world
+      		&lt;/namespace:childNode>
+      	&lt;/childNodes>
+      &lt;/rootNode>
+      
+      &lt;!--
+        -- Multiline comments &lt;b>tag&lt;/b>
+        -->
+</pre>
+<script type="text/javascript">
+    $(function () {
+        SyntaxHighlighter.all();
+    });
+</script>

@@ -9,11 +9,13 @@
             // implement
             $("#executeXPathButton").click(function () {
                 var undecoded = $("#xmlFrame").contents().find("pre").html();
+                var pathExpression = $("#xpathInput").val();
                 $.ajax({
                     type: "POST",
                     url: '@Url.Content("~/Home/XPathProcessing")',
-                    data: { xmlDoc: undecoded, xPath: '*' },
+                    data: { xmlDoc: undecoded, xPath: pathExpression },
                     success: function (res) {
+                        $("#xResultFrame").contents().find("#xPathResultDiv").html(res);
                         console.log(res);
                     },
                     dataType: 'text'
@@ -35,5 +37,5 @@
 </div>
 
 <div class="halfwidth float-right">
-    <iframe style="height:600px;width:100%;" src="about:blank"></iframe>
+    <iframe id="xResultFrame" style="height:600px;width:100%;" src="@Url.Action("XResolve")"></iframe>
 </div>
