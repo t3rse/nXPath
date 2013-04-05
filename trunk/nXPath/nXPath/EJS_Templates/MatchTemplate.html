@@ -1,0 +1,9 @@
+﻿<div id="allPagesViewList">
+<% for(var i = 0, len = spreads.length; i < len; i++){ %>
+    <%= new EJS({ url: $MC.webResourceURL("clientTemplates/CreationTool/pageSpread.htm") }).render({
+            spreadInfo: spreads[i],
+            isSelected: selectedSpreadId == spreads[i].SpreadId
+        }) 
+    %>
+<% } %>
+</div>

@@ -15,7 +15,11 @@
                     url: '@Url.Content("~/Home/XPathProcessing")',
                     data: { xmlDoc: undecoded, xPath: pathExpression },
                     success: function (res) {
-                        $("#xResultFrame").contents().find("#xPathResultDiv").html(res);
+                        //$("#xResultFrame").contents().find("#resContainer").html("<pre id='xpathResults' class='brush: xml'/>"); // clear
+                        //$("#xResultFrame").contents().find("#xpathResults").text(res);
+                        // prettify
+                        //parent.window.frames["xResultFrame"].updatePrettyXml();
+                        parent.window.frames["xResultFrame"].renderResults(res);
                         console.log(res);
                     },
                     dataType: 'text'
@@ -33,7 +37,7 @@
 </div>
 <div class="halfwidth float-left">
 
-    <iframe id="xmlFrame" style="height:600px;width:100%;" src="@Url.Action("XmlLoader")"></iframe>
+    <iframe id="xmlFrame" style="height:600px;width:100%;" src="@Url.Action("XLoader")"></iframe>
 </div>
 
 <div class="halfwidth float-right">

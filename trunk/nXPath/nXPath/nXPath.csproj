@@ -130,17 +130,21 @@
     </Compile>
     <Compile Include="Lib\CustomActionResult\XmlActionResult.cs" />
     <Compile Include="Models\XmlDocModel.cs" />
+    <Compile Include="Models\XPathMatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="EJS_Templates\MatchTemplate.html" />
     <Content Include="Global.asax" />
     <Content Include="SampleDocs\XMLFile1.xml">
       <SubType>Designer</SubType>
     </Content>
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\ejs.min.js" />
+    <Content Include="Scripts\ejs.viewHelpers.js" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
     <Content Include="Scripts\jquery.signalR-1.0.1.js" />

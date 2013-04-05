@@ -23,23 +23,55 @@ namespace nXPath.Controllers
             return View();
         }
 
-        public ActionResult XmlLoader() {
-
+        public ActionResult XLoader()
+        {
             return View("XLoader");
         }
 
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult XmlLoader(string xmlSourceArea)
+        public ActionResult XLoader(string xmlSourceArea)
         {
             var xml = Server.HtmlEncode(XDocument.Parse(xmlSourceArea).ToString());
             return View("XView", new XmlDocModel() { Xml = xml });
         }
 
+        private string FormatXml(string xml)
+        {
+            return XDocument.Parse(xml).ToString();
+        }
+
+        private string StringifyNode(XmlNode node) {
+            string result = String.Empty;
+            if (node is XmlElement)
+            {
+                result = this.FormatXml((node as XmlElement).OuterXml);
+            }
+            else if (node is XmlText)
+            {
+                result = (node as XmlText).Value;
+            }
+            else {
+                result = node.ToString();
+            }
+            return result;
+        }
+
+        private XPathMatch BuildXPathMatch(int nodeNum, XmlNode node)
+        {
+            return new XPathMatch() { 
+                Id = nodeNum, 
+                Type = node.GetType().ToString(), 
+                Content = this.StringifyNode(node)
+            };
+        }
+
         [HttpPost]
-        public ActionResult XPathProcessing(string xmlDoc, string xPath) {
-           
-            List<string> results = new List<string>();
+        public ActionResult XPathProcessing(string xmlDoc, string xPath)
+        {
+            Dictionary<string, string> matchData = new Dictionary<string, string>();
+
+            List<XPathMatch> results = new List<XPathMatch>();
             var xml = Server.HtmlDecode(xmlDoc);
 
             XmlDocument xdoc = new XmlDocument();
@@ -47,24 +79,14 @@ namespace nXPath.Controllers
 
             var nodeList = xdoc.SelectNodes(xPath);
 
-            foreach (var node in nodeList) {
-                if (node is XmlElement)
-                {
-                    results.Add((node as XmlElement).OuterXml);
-                }
-                else if (node is XmlText)
-                {
-                    results.Add((node as XmlText).Value);
-                }
-                else {
-                    results.Add(String.Format("{0}::{1}", node.GetType().ToString(), node.ToString()));
-                }
-            }
+            for (int i = 0; i < nodeList.Count; i++) 
+                results.Add(this.BuildXPathMatch(i, nodeList[i]));
 
-            return Content(String.Join("<br/>", results.Select(r => r.ToString()).ToArray()));
+            return Json(results);
         }
 
-        public ActionResult XResolve() {
+        public ActionResult XResolve()
+        {
             return View();
         }
 
