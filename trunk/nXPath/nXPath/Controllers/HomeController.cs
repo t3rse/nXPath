@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using nXPath.Lib.CustomActionFilter;
 using nXPath.Lib.CustomActionResult;
 using nXPath.Models;
 
@@ -23,6 +24,7 @@ namespace nXPath.Controllers
             return View();
         }
 
+        [NoCache]
         public ActionResult XLoader()
         {
             return View("XLoader");

@@ -4,39 +4,47 @@
 
 @section Head{
     <link rel="stylesheet" href="@Url.Content("~/style/style.css")" type="text/css" />    
+
     <script type="text/javascript">
         $(function () {
             // implement
             $("#executeXPathButton").click(function () {
-                var undecoded = $("#xmlFrame").contents().find("pre").html();
+                var undecoded = $("#xmlFrame").contents().find("#hContent").html();
                 var pathExpression = $("#xpathInput").val();
+                var ejs_path = '@Url.Content("~/EJS_Templates/MatchTemplate")';
                 $.ajax({
                     type: "POST",
                     url: '@Url.Content("~/Home/XPathProcessing")',
                     data: { xmlDoc: undecoded, xPath: pathExpression },
                     success: function (res) {
-                        //$("#xResultFrame").contents().find("#resContainer").html("<pre id='xpathResults' class='brush: xml'/>"); // clear
-                        //$("#xResultFrame").contents().find("#xpathResults").text(res);
-                        // prettify
-                        //parent.window.frames["xResultFrame"].updatePrettyXml();
-                        parent.window.frames["xResultFrame"].renderResults(res);
-                        console.log(res);
+                        var resData = JSON.parse(res);
+                        var oResult = { matches:resData };
+                        parent.window.frames["xResultFrame"].renderResults(oResult, ejs_path);
                     },
                     dataType: 'text'
                 });
-
             });
+
+            $("#loadResetButton").click(function () {
+                self.location.reload();
+            });
+
+            $("#xpathEntryDiv").hide();
+            $("#xdocReloadDiv").hide();
         });
     </script>
 }
 
 <h2>nXPath</h2>
-<div>
 
+<div class="halfwidth float-left" id="xdocReloadDiv">
+    <input id="loadResetButton" type="button" class="ui-button" value="Load different document" />
+</div>
+<div class="halfwidth float-right" id="xpathEntryDiv">
        <span id="xpathEntrySpan">Enter Your xPath:</span> <input type="text" id="xpathInput" /><input id="executeXPathButton" type="button" class="ui-button" value="Execute" />
 </div>
+<div style="clear:both" />
 <div class="halfwidth float-left">
-
     <iframe id="xmlFrame" style="height:600px;width:100%;" src="@Url.Action("XLoader")"></iframe>
 </div>
 

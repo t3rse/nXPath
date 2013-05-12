@@ -1,5 +1,6 @@
 ﻿body {
     margin:0px;
+    font-family:'Courier New';
 }
 
 .halfwidth
@@ -15,6 +16,16 @@
 .float-right
 {
     float:right;
+}
+
+#xmlSourceArea 
+{
+    width:100%;
+    height:235px;
+    background-color:#f1efef;
+    border:1px solid #333;
+    font-family:'Courier New';
+    font-size:8pt;
 }
 
 /*#xPathResultDiv 
